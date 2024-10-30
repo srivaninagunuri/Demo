@@ -290,7 +290,7 @@ if selected=='STATUS PREDICTION':
                     x_cls = np.array(data_cls).reshape(1, -1)  
                     scaling_model_cls = scaled_data_cls.transform(x_cls)
                     pred_status = trained_model_cls.predict(scaling_model_cls)
-                    if pred_status==6:
+                    if pred_status==7:
                         st.success(f'**Predicted Status : :green[WON]**')
                     else:
                         st.error(f'**Predicted Status : :blue[LOST]**')
